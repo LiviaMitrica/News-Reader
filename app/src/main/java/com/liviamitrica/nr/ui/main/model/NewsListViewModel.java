@@ -9,11 +9,11 @@ import androidx.lifecycle.OnLifecycleEvent;
 import androidx.lifecycle.ViewModel;
 
 import com.liviamitrica.nr.ui.main.listener.NewsArticleHandler;
-import com.liviamitrica.nr.ui.main.model.ArticleItemViewModel;
 
 public class NewsListViewModel  extends ViewModel implements LifecycleObserver, NewsArticleHandler {
     @NonNull
     public final ObservableList<ArticleItemViewModel> items;
+    private static final String TAG = NewsListViewModel.class.getName();
 
     public NewsListViewModel() {
         this.items = new ObservableArrayList<>();

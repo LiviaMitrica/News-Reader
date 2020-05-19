@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.liviamitrica.nr.databinding.ArticleItemFragmentBinding;
 import com.liviamitrica.nr.ui.main.listener.NewsArticleHandler;
 import com.liviamitrica.nr.ui.main.model.ArticleItemViewModel;
 
@@ -23,7 +24,7 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.NewsArti
 
     @Override
     public NewsArticleViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        ArticleItemBinding binder = ArticleItemBinder.inflate(LayoutInflater.from(parent.getContext()),parent, false);
+        ArticleItemFragmentBinding binder = ArticleItemFragmentBinding.inflate(LayoutInflater.from(parent.getContext()),parent, false);
 
         return new NewsArticleViewHolder(binder);
     }
@@ -47,9 +48,9 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.NewsArti
     }
 
     public class NewsArticleViewHolder extends RecyclerView.ViewHolder{
-        final ArticleItemBinding binding;
+        final ArticleItemFragmentBinding binding;
 
-        public NewsArticleViewHolder(ArticleItemBinding binding){
+        public NewsArticleViewHolder(ArticleItemFragmentBinding binding){
             super(binding.getRoot());
             this.binding = binding;
         }

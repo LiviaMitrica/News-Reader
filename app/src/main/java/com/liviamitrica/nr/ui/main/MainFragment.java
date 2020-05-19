@@ -1,20 +1,16 @@
 package com.liviamitrica.nr.ui.main;
 
-import androidx.lifecycle.ViewModelProviders;
-
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.liviamitrica.nr.R;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProviders;
+
 import com.liviamitrica.nr.databinding.MainFragmentBinding;
-import com.liviamitrica.nr.ui.main.model.ArticleItemViewModel;
 import com.liviamitrica.nr.ui.main.model.NewsListViewModel;
 
 public class MainFragment extends Fragment {

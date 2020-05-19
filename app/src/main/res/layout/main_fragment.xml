@@ -24,6 +24,8 @@
             android:layout_height="600dp"
             android:layout_marginBottom="32dp"
             android:scrollbars="vertical"
+            app:items="@{viewModel.items}"
+            app:todoHandler="@{viewModel}"
             app:layout_constraintBottom_toTopOf="@+id/refresh"
             app:layout_constraintEnd_toEndOf="parent"
             tools:listitem="@layout/article_item_fragment" />

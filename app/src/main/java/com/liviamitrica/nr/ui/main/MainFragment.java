@@ -13,10 +13,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.liviamitrica.nr.R;
+import com.liviamitrica.nr.databinding.MainFragmentBinding;
+import com.liviamitrica.nr.ui.main.model.ArticleItemViewModel;
+import com.liviamitrica.nr.ui.main.model.NewsListViewModel;
 
 public class MainFragment extends Fragment {
 
-    private MainViewModel mViewModel;
+    private NewsListViewModel mViewModel;
 
     public static MainFragment newInstance() {
         return new MainFragment();
@@ -26,14 +29,16 @@ public class MainFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.main_fragment, container, false);
+
+        MainFragmentBinding binding = MainFragmentBinding.inflate(inflater, container, false);
+        binding.setViewModel(mViewModel);
+        return binding.getRoot();
     }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
-        // TODO: Use the ViewModel
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        mViewModel = ViewModelProviders.of(this).get( NewsListViewModel.class);
+        getLifecycle().addObserver(mViewModel);
     }
-
 }

@@ -13,7 +13,7 @@ import java.util.List;
 
 public class RecyclerBinding {
 
-    @BindingAdapter({"items", "todoHandler"})
+    @BindingAdapter({"items", "NewsArticleHandler"})
     public static void addFeedItems(RecyclerView recyclerView, List<ArticleItemViewModel> newsList, NewsArticleHandler handler) {
         ArticleAdapter taskAdapter = (ArticleAdapter) recyclerView.getAdapter();
 

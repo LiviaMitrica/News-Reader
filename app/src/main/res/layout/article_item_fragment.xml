@@ -64,7 +64,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginBottom="16dp"
             android:contentDescription="TODO"
-            android:src="@mipmap/ic_launcher"
+            android:src="@{viewModel.aricleImage}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/content"
             app:layout_constraintHorizontal_bias="0.47"

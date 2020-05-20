@@ -14,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.NewsArticleViewHolder> {
-    @NonNull
+
     private List<ArticleItemViewModel> articleItemViewModels;
     private NewsArticleHandler handler;
 
@@ -23,8 +23,9 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.NewsArti
     }
 
     @Override
-    public NewsArticleViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        ArticleItemFragmentBinding binder = ArticleItemFragmentBinding.inflate(LayoutInflater.from(parent.getContext()),parent, false);
+    public NewsArticleViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        ArticleItemFragmentBinding binder = ArticleItemFragmentBinding.
+                inflate(LayoutInflater.from(parent.getContext()),parent, false);
 
         return new NewsArticleViewHolder(binder);
     }

@@ -1,4 +1,4 @@
-package com.liviamitrica.nr.ui.main.viewBindings;
+package com.liviamitrica.nr.ui.main.bindings;
 
 import android.graphics.Bitmap;
 import android.widget.ImageView;

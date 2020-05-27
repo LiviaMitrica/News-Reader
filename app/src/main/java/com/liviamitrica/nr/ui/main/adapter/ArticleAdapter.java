@@ -1,4 +1,4 @@
-package com.liviamitrica.nr.ui.main.Adapter;
+package com.liviamitrica.nr.ui.main.adapter;
 
 import android.view.LayoutInflater;
 import android.view.ViewGroup;

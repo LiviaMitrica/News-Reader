@@ -1,10 +1,10 @@
-package com.liviamitrica.nr.ui.main.viewBindings;
+package com.liviamitrica.nr.ui.main.bindings;
 
 import androidx.databinding.BindingAdapter;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.liviamitrica.nr.ui.main.Adapter.ArticleAdapter;
+import com.liviamitrica.nr.ui.main.adapter.ArticleAdapter;
 import com.liviamitrica.nr.ui.main.listener.NewsArticleHandler;
 import com.liviamitrica.nr.ui.main.model.ArticleItemViewModel;
 
@@ -13,7 +13,7 @@ import java.util.List;
 
 public class RecyclerBinding {
 
-    @BindingAdapter({"items", "NewsArticleHandler"})
+    @BindingAdapter({"items", "todoHandler"})
     public static void addFeedItems(RecyclerView recyclerView, List<ArticleItemViewModel> newsList, NewsArticleHandler handler) {
         ArticleAdapter taskAdapter = (ArticleAdapter) recyclerView.getAdapter();
 

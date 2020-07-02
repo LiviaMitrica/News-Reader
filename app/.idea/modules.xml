@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1953763011/NR.iml" filepath="$PROJECT_DIR$/.idea/modules/-1953763011/NR.iml" group="NR" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app.iml" group="NR/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1642099396/data.iml" filepath="$PROJECT_DIR$/.idea/modules/-1642099396/data.iml" group="NR/data" />
     </modules>
   </component>
 </project>
